@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import swizzler
 
 @objc public class Swizzler: NSObject{
     
@@ -57,11 +56,6 @@ import swizzler
     @objc public func handleResponse(task: URLSessionTask, request: URLRequest?, response: URLResponse?, error: Error?, taskCreated: Date) {
         
         guard self.isRecording else {
-            return
-        }
-        
-        // We are only interested in HTTP requests
-        guard let method = request?.httpMethod else {
             return
         }
         
