@@ -1,0 +1,22 @@
+PODS:
+  - RSSwizzle (0.1.0)
+
+DEPENDENCIES:
+  - RSSwizzle (from `https://github.com/datatheorem/RSSwizzle`, branch `master`)
+
+EXTERNAL SOURCES:
+  RSSwizzle:
+    :branch: master
+    :git: https://github.com/datatheorem/RSSwizzle
+
+CHECKOUT OPTIONS:
+  RSSwizzle:
+    :commit: b601e7dfd21e4335738e4ad9633da4ea2bcf12fd
+    :git: https://github.com/datatheorem/RSSwizzle
+
+SPEC CHECKSUMS:
+  RSSwizzle: d561958f595028bfcef98c7d55c318b3878a61c6
+
+PODFILE CHECKSUM: b457cefaee8e4450ab8ca5e3497ca349dd9128ac
+
+COCOAPODS: 1.5.3

@@ -7,14 +7,86 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A3F67695092B1B731C22EF2 /* Pods_swizzlerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B8807618030CABFCA2B9874 /* Pods_swizzlerTests.framework */; };
+		19E161C95466AA60D8494E7E /* Pods_swizzler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 544C6B5E25C691B216DA566D /* Pods_swizzler.framework */; };
 		F613F43022C27BB700458907 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F613F42F22C27BB700458907 /* AppDelegate.swift */; };
 		F613F43222C27BB700458907 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F613F43122C27BB700458907 /* ViewController.swift */; };
 		F613F43522C27BB700458907 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F613F43322C27BB700458907 /* Main.storyboard */; };
 		F613F43722C27BB900458907 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F613F43622C27BB900458907 /* Assets.xcassets */; };
 		F613F43A22C27BB900458907 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F613F43822C27BB900458907 /* LaunchScreen.storyboard */; };
+		F613F44F22C27BE900458907 /* swizzler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F613F44622C27BE900458907 /* swizzler.framework */; };
+		F613F45622C27BE900458907 /* swizzlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F613F45522C27BE900458907 /* swizzlerTests.swift */; };
+		F613F45822C27BE900458907 /* swizzler.h in Headers */ = {isa = PBXBuildFile; fileRef = F613F44822C27BE900458907 /* swizzler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F613F45B22C27BE900458907 /* swizzler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F613F44622C27BE900458907 /* swizzler.framework */; };
+		F613F45C22C27BE900458907 /* swizzler.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F613F44622C27BE900458907 /* swizzler.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F613F46522C27C0600458907 /* Swizzler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F613F46422C27C0600458907 /* Swizzler.swift */; };
+		F613F46722C27C2100458907 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F613F46622C27C2100458907 /* main.m */; };
+		F613F46922C27C3200458907 /* Saver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F613F46822C27C3200458907 /* Saver.swift */; };
+		F613F46B22C27C3F00458907 /* Recording.swift in Sources */ = {isa = PBXBuildFile; fileRef = F613F46A22C27C3F00458907 /* Recording.swift */; };
+		F613F46D22C27C5700458907 /* SwizzlerObjcHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F613F46C22C27C5700458907 /* SwizzlerObjcHelper.m */; };
+		F613F46F22C27C6600458907 /* HTTPURLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F613F46E22C27C6600458907 /* HTTPURLResponse.swift */; };
+		F613F48322C280A900458907 /* RSSwizzle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F613F48222C280A900458907 /* RSSwizzle.framework */; };
+		F613F49022C285CE00458907 /* RSSwizzle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = F613F48F22C285CE00458907 /* RSSwizzle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F613F49822C28D0F00458907 /* Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = F613F49722C28D0F00458907 /* Swift.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F613F45022C27BE900458907 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F613F42422C27BB700458907 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F613F44522C27BE900458907;
+			remoteInfo = swizzler;
+		};
+		F613F45222C27BE900458907 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F613F42422C27BB700458907 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F613F42B22C27BB700458907;
+			remoteInfo = example;
+		};
+		F613F45922C27BE900458907 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F613F42422C27BB700458907 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F613F44522C27BE900458907;
+			remoteInfo = swizzler;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F613F46022C27BE900458907 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F613F45C22C27BE900458907 /* swizzler.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F613F48E22C285C500458907 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F613F49022C285CE00458907 /* RSSwizzle.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		00861B4C87A500FAB4E6394F /* Pods_example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0816B3B3EFA3D8F71F26BA10 /* Pods-swizzler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swizzler.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swizzler/Pods-swizzler.debug.xcconfig"; sourceTree = "<group>"; };
+		2B8807618030CABFCA2B9874 /* Pods_swizzlerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swizzlerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		544C6B5E25C691B216DA566D /* Pods_swizzler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swizzler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E08B65BE646AE294420B7AD /* Pods-swizzler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swizzler.release.xcconfig"; path = "Pods/Target Support Files/Pods-swizzler/Pods-swizzler.release.xcconfig"; sourceTree = "<group>"; };
+		8EB55694874FBC3D2DED6C83 /* Pods-swizzlerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swizzlerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-swizzlerTests/Pods-swizzlerTests.release.xcconfig"; sourceTree = "<group>"; };
+		BE3FE1DDBD75EB255EA125A6 /* Pods-swizzlerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swizzlerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swizzlerTests/Pods-swizzlerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F613F42C22C27BB700458907 /* example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F613F42F22C27BB700458907 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F613F43122C27BB700458907 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +94,22 @@
 		F613F43622C27BB900458907 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F613F43922C27BB900458907 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F613F43B22C27BB900458907 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F613F44622C27BE900458907 /* swizzler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = swizzler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F613F44822C27BE900458907 /* swizzler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = swizzler.h; sourceTree = "<group>"; };
+		F613F44922C27BE900458907 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F613F44E22C27BE900458907 /* swizzlerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swizzlerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F613F45522C27BE900458907 /* swizzlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swizzlerTests.swift; sourceTree = "<group>"; };
+		F613F45722C27BE900458907 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F613F46422C27C0600458907 /* Swizzler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swizzler.swift; sourceTree = "<group>"; };
+		F613F46622C27C2100458907 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F613F46822C27C3200458907 /* Saver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Saver.swift; sourceTree = "<group>"; };
+		F613F46A22C27C3F00458907 /* Recording.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recording.swift; sourceTree = "<group>"; };
+		F613F46C22C27C5700458907 /* SwizzlerObjcHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwizzlerObjcHelper.m; sourceTree = "<group>"; };
+		F613F46E22C27C6600458907 /* HTTPURLResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPURLResponse.swift; sourceTree = "<group>"; };
+		F613F48222C280A900458907 /* RSSwizzle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RSSwizzle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F613F48522C280FA00458907 /* RSSwizzle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RSSwizzle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F613F48F22C285CE00458907 /* RSSwizzle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RSSwizzle.framework; path = "../../Library/Developer/Xcode/DerivedData/example-goancssvvxrlokclmakkvetxmxys/Build/Products/Debug-iphonesimulator/RSSwizzle/RSSwizzle.framework"; sourceTree = "<group>"; };
+		F613F49722C28D0F00458907 /* Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +117,64 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F613F45B22C27BE900458907 /* swizzler.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F613F44222C27BE900458907 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F613F48322C280A900458907 /* RSSwizzle.framework in Frameworks */,
+				19E161C95466AA60D8494E7E /* Pods_swizzler.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F613F44B22C27BE900458907 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F613F44F22C27BE900458907 /* swizzler.framework in Frameworks */,
+				0A3F67695092B1B731C22EF2 /* Pods_swizzlerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7787693C98724187E437B268 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F613F48222C280A900458907 /* RSSwizzle.framework */,
+				F613F48522C280FA00458907 /* RSSwizzle.framework */,
+				00861B4C87A500FAB4E6394F /* Pods_example.framework */,
+				544C6B5E25C691B216DA566D /* Pods_swizzler.framework */,
+				2B8807618030CABFCA2B9874 /* Pods_swizzlerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F45D4E0F2737B9052FEA9AA5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0816B3B3EFA3D8F71F26BA10 /* Pods-swizzler.debug.xcconfig */,
+				8E08B65BE646AE294420B7AD /* Pods-swizzler.release.xcconfig */,
+				BE3FE1DDBD75EB255EA125A6 /* Pods-swizzlerTests.debug.xcconfig */,
+				8EB55694874FBC3D2DED6C83 /* Pods-swizzlerTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F613F42322C27BB700458907 = {
 			isa = PBXGroup;
 			children = (
+				F613F48F22C285CE00458907 /* RSSwizzle.framework */,
 				F613F42E22C27BB700458907 /* example */,
+				F613F44722C27BE900458907 /* swizzler */,
+				F613F45422C27BE900458907 /* swizzlerTests */,
 				F613F42D22C27BB700458907 /* Products */,
+				7787693C98724187E437B268 /* Frameworks */,
+				F45D4E0F2737B9052FEA9AA5 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +182,8 @@
 			isa = PBXGroup;
 			children = (
 				F613F42C22C27BB700458907 /* example.app */,
+				F613F44622C27BE900458907 /* swizzler.framework */,
+				F613F44E22C27BE900458907 /* swizzlerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,7 +201,51 @@
 			path = example;
 			sourceTree = "<group>";
 		};
+		F613F44722C27BE900458907 /* swizzler */ = {
+			isa = PBXGroup;
+			children = (
+				F613F47022C27C6E00458907 /* Extensions */,
+				F613F44822C27BE900458907 /* swizzler.h */,
+				F613F44922C27BE900458907 /* Info.plist */,
+				F613F46422C27C0600458907 /* Swizzler.swift */,
+				F613F46822C27C3200458907 /* Saver.swift */,
+				F613F46A22C27C3F00458907 /* Recording.swift */,
+				F613F46C22C27C5700458907 /* SwizzlerObjcHelper.m */,
+				F613F46622C27C2100458907 /* main.m */,
+			);
+			path = swizzler;
+			sourceTree = "<group>";
+		};
+		F613F45422C27BE900458907 /* swizzlerTests */ = {
+			isa = PBXGroup;
+			children = (
+				F613F45522C27BE900458907 /* swizzlerTests.swift */,
+				F613F45722C27BE900458907 /* Info.plist */,
+			);
+			path = swizzlerTests;
+			sourceTree = "<group>";
+		};
+		F613F47022C27C6E00458907 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F613F46E22C27C6600458907 /* HTTPURLResponse.swift */,
+				F613F49722C28D0F00458907 /* Swift.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F613F44322C27BE900458907 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F613F45822C27BE900458907 /* swizzler.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		F613F42B22C27BB700458907 /* example */ = {
@@ -74,15 +255,58 @@
 				F613F42822C27BB700458907 /* Sources */,
 				F613F42922C27BB700458907 /* Frameworks */,
 				F613F42A22C27BB700458907 /* Resources */,
+				F613F46022C27BE900458907 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F613F45A22C27BE900458907 /* PBXTargetDependency */,
 			);
 			name = example;
 			productName = example;
 			productReference = F613F42C22C27BB700458907 /* example.app */;
 			productType = "com.apple.product-type.application";
+		};
+		F613F44522C27BE900458907 /* swizzler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F613F45D22C27BE900458907 /* Build configuration list for PBXNativeTarget "swizzler" */;
+			buildPhases = (
+				EB997C73D5BA539A3CBC02A1 /* [CP] Check Pods Manifest.lock */,
+				F613F44122C27BE900458907 /* Sources */,
+				F613F44222C27BE900458907 /* Frameworks */,
+				F613F44322C27BE900458907 /* Headers */,
+				F613F44422C27BE900458907 /* Resources */,
+				F613F48E22C285C500458907 /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = swizzler;
+			productName = swizzler;
+			productReference = F613F44622C27BE900458907 /* swizzler.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F613F44D22C27BE900458907 /* swizzlerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F613F46122C27BE900458907 /* Build configuration list for PBXNativeTarget "swizzlerTests" */;
+			buildPhases = (
+				8F56F9478CB3AF9474BAFCA4 /* [CP] Check Pods Manifest.lock */,
+				F613F44A22C27BE900458907 /* Sources */,
+				F613F44B22C27BE900458907 /* Frameworks */,
+				F613F44C22C27BE900458907 /* Resources */,
+				3920CB28029B5EB15F476BAD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F613F45122C27BE900458907 /* PBXTargetDependency */,
+				F613F45322C27BE900458907 /* PBXTargetDependency */,
+			);
+			name = swizzlerTests;
+			productName = swizzlerTests;
+			productReference = F613F44E22C27BE900458907 /* swizzlerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -96,6 +320,14 @@
 				TargetAttributes = {
 					F613F42B22C27BB700458907 = {
 						CreatedOnToolsVersion = 9.3;
+					};
+					F613F44522C27BE900458907 = {
+						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
+					};
+					F613F44D22C27BE900458907 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = F613F42B22C27BB700458907;
 					};
 				};
 			};
@@ -113,6 +345,8 @@
 			projectRoot = "";
 			targets = (
 				F613F42B22C27BB700458907 /* example */,
+				F613F44522C27BE900458907 /* swizzler */,
+				F613F44D22C27BE900458907 /* swizzlerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,7 +362,78 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F613F44422C27BE900458907 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F613F44C22C27BE900458907 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3920CB28029B5EB15F476BAD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-swizzlerTests/Pods-swizzlerTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RSSwizzle/RSSwizzle.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RSSwizzle.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-swizzlerTests/Pods-swizzlerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F56F9478CB3AF9474BAFCA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-swizzlerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB997C73D5BA539A3CBC02A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-swizzler-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F613F42822C27BB700458907 /* Sources */ = {
@@ -140,7 +445,47 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F613F44122C27BE900458907 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F613F46722C27C2100458907 /* main.m in Sources */,
+				F613F46522C27C0600458907 /* Swizzler.swift in Sources */,
+				F613F46F22C27C6600458907 /* HTTPURLResponse.swift in Sources */,
+				F613F46922C27C3200458907 /* Saver.swift in Sources */,
+				F613F46B22C27C3F00458907 /* Recording.swift in Sources */,
+				F613F49822C28D0F00458907 /* Swift.swift in Sources */,
+				F613F46D22C27C5700458907 /* SwizzlerObjcHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F613F44A22C27BE900458907 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F613F45622C27BE900458907 /* swizzlerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F613F45122C27BE900458907 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F613F44522C27BE900458907 /* swizzler */;
+			targetProxy = F613F45022C27BE900458907 /* PBXContainerItemProxy */;
+		};
+		F613F45322C27BE900458907 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F613F42B22C27BB700458907 /* example */;
+			targetProxy = F613F45222C27BE900458907 /* PBXContainerItemProxy */;
+		};
+		F613F45A22C27BE900458907 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F613F44522C27BE900458907 /* swizzler */;
+			targetProxy = F613F45922C27BE900458907 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F613F43322C27BB700458907 /* Main.storyboard */ = {
@@ -279,10 +624,12 @@
 		F613F43F22C27BB900458907 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C6L3992RFB;
 				INFOPLIST_FILE = example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -297,10 +644,12 @@
 		F613F44022C27BB900458907 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C6L3992RFB;
 				INFOPLIST_FILE = example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +658,111 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F613F45E22C27BE900458907 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0816B3B3EFA3D8F71F26BA10 /* Pods-swizzler.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = C6L3992RFB;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = swizzler/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.twodayslate.datatheorem.sessionswizzler.swizzler;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F613F45F22C27BE900458907 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E08B65BE646AE294420B7AD /* Pods-swizzler.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = C6L3992RFB;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = swizzler/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.twodayslate.datatheorem.sessionswizzler.swizzler;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F613F46222C27BE900458907 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE3FE1DDBD75EB255EA125A6 /* Pods-swizzlerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C6L3992RFB;
+				INFOPLIST_FILE = swizzlerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.twodayslate.datatheorem.sessionswizzler.swizzlerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/example.app/example";
+			};
+			name = Debug;
+		};
+		F613F46322C27BE900458907 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EB55694874FBC3D2DED6C83 /* Pods-swizzlerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C6L3992RFB;
+				INFOPLIST_FILE = swizzlerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.twodayslate.datatheorem.sessionswizzler.swizzlerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/example.app/example";
 			};
 			name = Release;
 		};
@@ -329,6 +783,24 @@
 			buildConfigurations = (
 				F613F43F22C27BB900458907 /* Debug */,
 				F613F44022C27BB900458907 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F613F45D22C27BE900458907 /* Build configuration list for PBXNativeTarget "swizzler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F613F45E22C27BE900458907 /* Debug */,
+				F613F45F22C27BE900458907 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F613F46122C27BE900458907 /* Build configuration list for PBXNativeTarget "swizzlerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F613F46222C27BE900458907 /* Debug */,
+				F613F46322C27BE900458907 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
