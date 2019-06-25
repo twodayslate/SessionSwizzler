@@ -29,4 +29,6 @@ Each line contains the URL that the task was initialized with, the time it took 
 
 If you are testing in the simulator, the file path will look something like `~/Library/Developer/CoreSimulator/Devices/B9DD1EA7-76A8-4BD5-8E14-749AF22A6C0A/data/Containers/Bundle/Application/B907A4B7-60AB-407F-9E92-B6E7B4794E46/Wikipedia.app/tmp`
 
+You can see examples inside this repository with example.app or [Wikipedia.app](https://github.com/twodayslate/wikipedia-ios/tree/coding-exercise-with-swizzle)
+
 Although this framework is supposed to be a drag-and-forget type of framework, if you have debugging capabilties you can turn off `NSURLSession` recordings using `[[SwizzlerObjc shared] stopRecording];`. Please note that this only turns of recordings, it currently does not undo the swizzling. You can start it again with `[[SwizzlerObjc shared] startRecording];`
