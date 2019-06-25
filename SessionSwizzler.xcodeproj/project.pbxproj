@@ -87,7 +87,7 @@
 		8E08B65BE646AE294420B7AD /* Pods-swizzler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swizzler.release.xcconfig"; path = "Pods/Target Support Files/Pods-swizzler/Pods-swizzler.release.xcconfig"; sourceTree = "<group>"; };
 		8EB55694874FBC3D2DED6C83 /* Pods-swizzlerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swizzlerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-swizzlerTests/Pods-swizzlerTests.release.xcconfig"; sourceTree = "<group>"; };
 		BE3FE1DDBD75EB255EA125A6 /* Pods-swizzlerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swizzlerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swizzlerTests/Pods-swizzlerTests.debug.xcconfig"; sourceTree = "<group>"; };
-		F613F42C22C27BB700458907 /* example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F613F42C22C27BB700458907 /* SessionSwizzler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SessionSwizzler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F613F42F22C27BB700458907 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F613F43122C27BB700458907 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F613F43422C27BB700458907 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -181,7 +181,7 @@
 		F613F42D22C27BB700458907 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F613F42C22C27BB700458907 /* example.app */,
+				F613F42C22C27BB700458907 /* SessionSwizzler.app */,
 				F613F44622C27BE900458907 /* swizzler.framework */,
 				F613F44E22C27BE900458907 /* swizzlerTests.xctest */,
 			);
@@ -248,9 +248,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		F613F42B22C27BB700458907 /* example */ = {
+		F613F42B22C27BB700458907 /* SessionSwizzler */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F613F43E22C27BB900458907 /* Build configuration list for PBXNativeTarget "example" */;
+			buildConfigurationList = F613F43E22C27BB900458907 /* Build configuration list for PBXNativeTarget "SessionSwizzler" */;
 			buildPhases = (
 				F613F42822C27BB700458907 /* Sources */,
 				F613F42922C27BB700458907 /* Frameworks */,
@@ -262,9 +262,9 @@
 			dependencies = (
 				F613F45A22C27BE900458907 /* PBXTargetDependency */,
 			);
-			name = example;
+			name = SessionSwizzler;
 			productName = example;
-			productReference = F613F42C22C27BB700458907 /* example.app */;
+			productReference = F613F42C22C27BB700458907 /* SessionSwizzler.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F613F44522C27BE900458907 /* swizzler */ = {
@@ -331,7 +331,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F613F42722C27BB700458907 /* Build configuration list for PBXProject "example" */;
+			buildConfigurationList = F613F42722C27BB700458907 /* Build configuration list for PBXProject "SessionSwizzler" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -344,7 +344,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F613F42B22C27BB700458907 /* example */,
+				F613F42B22C27BB700458907 /* SessionSwizzler */,
 				F613F44522C27BE900458907 /* swizzler */,
 				F613F44D22C27BE900458907 /* swizzlerTests */,
 			);
@@ -477,7 +477,7 @@
 		};
 		F613F45322C27BE900458907 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F613F42B22C27BB700458907 /* example */;
+			target = F613F42B22C27BB700458907 /* SessionSwizzler */;
 			targetProxy = F613F45222C27BE900458907 /* PBXContainerItemProxy */;
 		};
 		F613F45A22C27BE900458907 /* PBXTargetDependency */ = {
@@ -741,7 +741,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/example.app/example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SessionSwizzler.app/SessionSwizzler";
 			};
 			name = Debug;
 		};
@@ -762,14 +762,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/example.app/example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SessionSwizzler.app/SessionSwizzler";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F613F42722C27BB700458907 /* Build configuration list for PBXProject "example" */ = {
+		F613F42722C27BB700458907 /* Build configuration list for PBXProject "SessionSwizzler" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F613F43C22C27BB900458907 /* Debug */,
@@ -778,7 +778,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F613F43E22C27BB900458907 /* Build configuration list for PBXNativeTarget "example" */ = {
+		F613F43E22C27BB900458907 /* Build configuration list for PBXNativeTarget "SessionSwizzler" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F613F43F22C27BB900458907 /* Debug */,
