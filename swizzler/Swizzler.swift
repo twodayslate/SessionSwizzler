@@ -10,26 +10,31 @@ import Foundation
 
 @objc public class Swizzler: NSObject{
     
+    /** Returns the shared Swizzler object.*/
     @objc public static let shared = Swizzler()
+    
+    /** Whether or not URLSession tasks are being recorded */
     @objc public var isRecording: Bool = false
+    
     /** the default saver is a FileSaver with "tmp" as the name */
-    var saver: Saver = FileSaver(name: "tmp")!
+    var saver: RecordSaver = FileRecordSaver(name: "tmp")!
     
     /**
-     * This is an internal method and should not be called directly
+     Calls SwizzlerObjc's startRecording method and sets the appropriate flags
+     - warning: This is an internal method and should not be called directly, try SwizzlerObjc
      */
     @objc public func startRecording() {
         //SwizzlerObjc.shared.startRecording()
         guard !self.isRecording else {
             return
         }
-        
         self.isRecording = true
         SwizzlerObjc.shared()?.startRecording()
     }
     
     /**
-     * This is an internal method and should not be called directly
+    Calls SwizzlerObjc's stopRecording method and sets the appropriate flags
+     - warning: This is an internal method and should not be called directly, try SwizzlerObjc
      */
     @objc public func stopRecording() {
         guard self.isRecording else {
@@ -44,14 +49,15 @@ import Foundation
     var responses = [URLResponse?]()
     
     /**
-     * Handle Responses from recordings
-     *
-     * - parameter task: The task
-     * - parameter request: The original request
-     * - parameter response: The response, if any
-     * - parameter error: An error, if any
-     * - parameter taskCreated: the time the task was created, note this is not
-     *                      the same thing as when the task was started/resumed
+    Handle URLSession task responses, creates a Recording and saves it using `Saver`
+    
+    - parameters:
+        - task: The task
+        - request: The original request
+        - response: The response, if any
+        - error: An error, if any
+        - taskCreated: the time the task was created, note this is not
+                       the same thing as when the task was started/resumed
      */
     @objc public func handleResponse(task: URLSessionTask, request: URLRequest?, response: URLResponse?, error: Error?, taskCreated: Date) {
         
@@ -71,7 +77,7 @@ import Foundation
             return
         }
         
-        // Hack to remove duplicates
+        // XXX: Hack to remove duplicates
         if response != nil && responses.contains(response) {
             return
         }
@@ -91,7 +97,7 @@ import Foundation
         
         let wasSuccess = (error == nil) && HTTPURLResponse.isSuccess(httpResponse.statusCode)
         
-        let record = Recording(request: requestURL, response: responseURL, completionTime: timeDiffInMiliseconds, success: wasSuccess)
-        record.save(self.saver)
+        let record = Record(request: requestURL, response: responseURL, completionTime: timeDiffInMiliseconds, success: wasSuccess)
+        record.save(with: self.saver)
     }
 }

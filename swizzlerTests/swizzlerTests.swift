@@ -29,7 +29,7 @@ class swizzlerTests: XCTestCase {
         let session = URLSession(configuration: .default)
         session.dataTask(with: URL(string: "https://yahoo.com")!).resume()
         
-        XCTAssertTrue(FileManager.default.isReadableFile(atPath: (Swizzler.shared.saver as! FileSaver).filePath))
+        XCTAssertTrue(FileManager.default.isReadableFile(atPath: (Swizzler.shared.saver as! FileRecordSaver).filePath))
     }
     
     func testRedirect() {
@@ -37,15 +37,14 @@ class swizzlerTests: XCTestCase {
         
         let session = URLSession(configuration: .default)
         session.dataTask(with: URL(string: "https://yahoo.com")!, completionHandler: { data, response, error in
-            let result = try! String(contentsOfFile: (Swizzler.shared.saver as! FileSaver).filePath, encoding: .utf8)
-            print("!!!!!\n", result)
+            let result = try! String(contentsOfFile: (Swizzler.shared.saver as! FileRecordSaver).filePath, encoding: .utf8)
             
             XCTAssertTrue(result.contains("https://yahoo.com,") && result.contains("https://www.yahoo.com/, SUCCESS")) // XXX: use regex to make sure this is on the same line
             
             expectation.fulfill()
         }).resume()
         
-        XCTAssertTrue(FileManager.default.isReadableFile(atPath: (Swizzler.shared.saver as! FileSaver).filePath))
+        XCTAssertTrue(FileManager.default.isReadableFile(atPath: (Swizzler.shared.saver as! FileRecordSaver).filePath))
         
         wait(for: [expectation], timeout: 5.0)
     }

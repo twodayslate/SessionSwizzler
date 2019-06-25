@@ -21,13 +21,14 @@
 		F613F45C22C27BE900458907 /* swizzler.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F613F44622C27BE900458907 /* swizzler.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F613F46522C27C0600458907 /* Swizzler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F613F46422C27C0600458907 /* Swizzler.swift */; };
 		F613F46722C27C2100458907 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F613F46622C27C2100458907 /* main.m */; };
-		F613F46922C27C3200458907 /* Saver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F613F46822C27C3200458907 /* Saver.swift */; };
-		F613F46B22C27C3F00458907 /* Recording.swift in Sources */ = {isa = PBXBuildFile; fileRef = F613F46A22C27C3F00458907 /* Recording.swift */; };
+		F613F46922C27C3200458907 /* RecordSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F613F46822C27C3200458907 /* RecordSaver.swift */; };
+		F613F46B22C27C3F00458907 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = F613F46A22C27C3F00458907 /* Record.swift */; };
 		F613F46D22C27C5700458907 /* SwizzlerObjcHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F613F46C22C27C5700458907 /* SwizzlerObjcHelper.m */; };
 		F613F46F22C27C6600458907 /* HTTPURLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F613F46E22C27C6600458907 /* HTTPURLResponse.swift */; };
 		F613F48322C280A900458907 /* RSSwizzle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F613F48222C280A900458907 /* RSSwizzle.framework */; };
 		F613F49022C285CE00458907 /* RSSwizzle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = F613F48F22C285CE00458907 /* RSSwizzle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F613F49822C28D0F00458907 /* Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = F613F49722C28D0F00458907 /* Swift.swift */; };
+		F613F4A222C2A62600458907 /* FileRecordSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F613F4A122C2A62600458907 /* FileRecordSaver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,14 +103,15 @@
 		F613F45722C27BE900458907 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F613F46422C27C0600458907 /* Swizzler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swizzler.swift; sourceTree = "<group>"; };
 		F613F46622C27C2100458907 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F613F46822C27C3200458907 /* Saver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Saver.swift; sourceTree = "<group>"; };
-		F613F46A22C27C3F00458907 /* Recording.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recording.swift; sourceTree = "<group>"; };
+		F613F46822C27C3200458907 /* RecordSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSaver.swift; sourceTree = "<group>"; };
+		F613F46A22C27C3F00458907 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		F613F46C22C27C5700458907 /* SwizzlerObjcHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwizzlerObjcHelper.m; sourceTree = "<group>"; };
 		F613F46E22C27C6600458907 /* HTTPURLResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPURLResponse.swift; sourceTree = "<group>"; };
 		F613F48222C280A900458907 /* RSSwizzle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RSSwizzle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F613F48522C280FA00458907 /* RSSwizzle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RSSwizzle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F613F48F22C285CE00458907 /* RSSwizzle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RSSwizzle.framework; path = "../../Library/Developer/Xcode/DerivedData/example-goancssvvxrlokclmakkvetxmxys/Build/Products/Debug-iphonesimulator/RSSwizzle/RSSwizzle.framework"; sourceTree = "<group>"; };
 		F613F49722C28D0F00458907 /* Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift.swift; sourceTree = "<group>"; };
+		F613F4A122C2A62600458907 /* FileRecordSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileRecordSaver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,13 +207,12 @@
 			isa = PBXGroup;
 			children = (
 				F613F47022C27C6E00458907 /* Extensions */,
+				F613F4A422C2A6F400458907 /* Record */,
 				F613F44822C27BE900458907 /* swizzler.h */,
-				F613F44922C27BE900458907 /* Info.plist */,
-				F613F46422C27C0600458907 /* Swizzler.swift */,
-				F613F46822C27C3200458907 /* Saver.swift */,
-				F613F46A22C27C3F00458907 /* Recording.swift */,
-				F613F46C22C27C5700458907 /* SwizzlerObjcHelper.m */,
 				F613F46622C27C2100458907 /* main.m */,
+				F613F46422C27C0600458907 /* Swizzler.swift */,
+				F613F46C22C27C5700458907 /* SwizzlerObjcHelper.m */,
+				F613F44922C27BE900458907 /* Info.plist */,
 			);
 			path = swizzler;
 			sourceTree = "<group>";
@@ -232,6 +233,24 @@
 				F613F49722C28D0F00458907 /* Swift.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F613F4A322C2A65800458907 /* RecordSaver */ = {
+			isa = PBXGroup;
+			children = (
+				F613F46822C27C3200458907 /* RecordSaver.swift */,
+				F613F4A122C2A62600458907 /* FileRecordSaver.swift */,
+			);
+			path = RecordSaver;
+			sourceTree = "<group>";
+		};
+		F613F4A422C2A6F400458907 /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				F613F4A322C2A65800458907 /* RecordSaver */,
+				F613F46A22C27C3F00458907 /* Record.swift */,
+			);
+			path = Record;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -449,11 +468,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F613F4A222C2A62600458907 /* FileRecordSaver.swift in Sources */,
 				F613F46722C27C2100458907 /* main.m in Sources */,
 				F613F46522C27C0600458907 /* Swizzler.swift in Sources */,
 				F613F46F22C27C6600458907 /* HTTPURLResponse.swift in Sources */,
-				F613F46922C27C3200458907 /* Saver.swift in Sources */,
-				F613F46B22C27C3F00458907 /* Recording.swift in Sources */,
+				F613F46922C27C3200458907 /* RecordSaver.swift in Sources */,
+				F613F46B22C27C3F00458907 /* Record.swift in Sources */,
 				F613F49822C28D0F00458907 /* Swift.swift in Sources */,
 				F613F46D22C27C5700458907 /* SwizzlerObjcHelper.m in Sources */,
 			);
